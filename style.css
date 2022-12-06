@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#image-container {
+  background-image: url('./halie-west.jpg');
+  background-size: cover;
+
+  height: 100%;
+  width: 40%;
+
+  color: #fefefb;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+#image-container > p {
+  font-size: 0.8rem;
+}
+
+#image-container > p > a {
+  color: #fefefb;
+}
+
+.logo {
+  padding: 1rem;
+  margin-top: 200px;
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo > img {
+  max-width: 75px;
+}
+
+.logo > p {
+  font-family: "Norse Bold", sans-serif;
+  font-size: 5rem;
+}
+
+@media (max-width: 900px) {
+  #image-container {
+    display: none;
+  }
+}
+
+/* -.-.-.-.-.-.-.-.-.-.- */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #f9fafc;
+}
+
+#container > p {
+  padding: 2em;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+form {
+  background-color: white;
+  padding: 1em 48px;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.form-row, .form-row > p {
+  display: flex;
+}
+
+.form-row {
+  gap: 4rem;
+}
+
+.form-row > p {
+  flex-direction: column;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin: 0.5rem;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  height: 2rem;
+  width: 250px;
+  padding: 0 0.5rem;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.3);
+}
+
+/* -.-.-.-.-.-.-.-.-.-.- */
+
+#button-container {
+  padding: 2rem 48px;
+  font-size: 1.1rem;
+}
+
+#button-container a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 600;
+}
+
+#button-container button {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  background-color: #596d48;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 3rem;
+  box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.2);
+}
